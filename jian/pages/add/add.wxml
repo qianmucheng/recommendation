@@ -1,0 +1,20 @@
+<view class="container">
+    <form bindsubmit="formSubmit">
+        <view class="row">
+            <text>应用名称：</text>
+            <input focus="true" type="text" name="name" placeholder="请输入应用名称" />
+        </view>
+        <view class="row">
+            <text>应用简介：</text>
+            <input type="text" name="desc" placeholder="请输入应用简介" />
+        </view>
+        <view class="row">
+            <text class="self-text">推荐理由：</text>
+             <textarea  name="reason" placeholder="请输入推荐理由"/>
+        </view>
+        <view class="row">
+            <button type="primary" form-type="submit">提交</button>
+        </view>
+
+    </form>
+</view>

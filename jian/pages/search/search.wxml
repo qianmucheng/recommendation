@@ -1,0 +1,4 @@
+<view class="search-wrap">
+    <input class="search-in" type="text" placeholder="搜索小程序、公众号、应用"/>
+    <icon type="search" size="16" class="search-icon" />
+</view>

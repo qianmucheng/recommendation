@@ -1,0 +1,123 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.pageAnimate {
+  transition: all 100ms ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+.tab-bar {
+  position: relative;
+  display: flex;
+  font-size: 30rpx;
+  color: #666;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+.tab-active {
+  color: #2d80ff;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  line-height: 34px;
+}
+.underline {
+  position: absolute;
+  bottom: 0;
+  height: 6rpx;
+  background-color: #2d80ff;
+}
+.search {
+  width: 45px;
+  border-left: 1px solid #ccc;
+  background-color: #fff;
+}
+.search icon {
+  padding: 7px 12px;
+}
+.scroll-view {
+  position: relative;
+  background: #e7eaef;
+  width: 100%;
+  height: 100%; 
+}
+.scroll-view-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 34px;
+  display: flex;
+}
+.one-scene {
+  height: 100%;
+}
+.item-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 0 1 auto;
+  height: 50px;
+  background-color: white;
+  margin: 2px 0;
+  color: black;
+  padding: 5px;
+}
+.img-wrapper{
+  flex: 0 1 auto;
+  margin-right: 10px;
+  height: 50px;
+}
+.img-wrapper image{
+  height: 50px;
+  width: 50px;
+}
+.text-wrapper{
+  flex: 1 1 auto;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.item-title {
+  flex: 0 1 auto;
+  font-size: 30rpx;
+  padding: 0.2rem 0;
+  font-weight: 560;
+}
+.item-desc {
+  flex: 1 1 auto;
+  font-size: 26rpx;
+  padding: 0.2rem 0;
+  color: #aaa;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.add {
+  z-index: 9999;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.add image{
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="tab-bar">
+    <view wx:for="{{tabs}}" wx:key="unique" data-index="{{index}}" bindtap="handlerTabTap" class="tab {{activeTab==index?'tab-active':''}}" style="width: {{windowWidth/tabs.length - 15}}px">
+      <text>{{item}}</text>
+    </view>
+    <view class="search" bindtap="handlerSearch">
+      <icon type="search" size="20" color="#2d80ff"/>
+    </view>
+    <view style="width: {{lineWidth}}px; left: {{lineOffset/tabs.length}}px" class="underline pageAnimate"></view>
+  </view>
+  <view class="scroll-view">
+    <view class="scroll-view-wrapper pageAnimate" style="left: -{{pageOffset}}px">
+      <view style="width: {{windowWidth}}px;" wx:for="{{tabs}}" wx:key="unique" class="one-scene">
+        <scroll-view style="height:100%;" scroll-y>
+          
+          <block wx:for="{{mockData}}" wx:key="unique">
+            <view class="item-list" style="width: {{windowWidth}}px;">
+              <view class="img-wrapper">
+                <image src="{{item.imageurl}}.jpg"></image>
+              </view>
+              <view class="text-wrapper">
+                <view class="item-title"><text>{{item.title}}</text></view>
+                <view class="item-desc" style="width: {{windowWidth - 70}}px"><text>{{item.desc}}</text></view>
+              </view>
+            </view>
+          </block>
+
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="add" bindtap="handlerAddApp">
+  <image src="../../assets/images/add.png"></image>
+</view>

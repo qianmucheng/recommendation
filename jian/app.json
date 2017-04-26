@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/about/about",
+    "pages/theme/theme",
+    "pages/add/add",
+    "pages/search/search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#ededed",
+    "navigationBarBackgroundColor": "#2d80ff",
+    "navigationBarTitleText": "荐",
+    "navigationBarTextStyle":"white"
+  },
+   "tabBar": {
+     "backgroundColor": "#ffffff",
+     "selectedColor": "#2d80ff",
+     "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "assets/images/index.png",
+      "selectedIconPath": "assets/images/index_selected.png"
+    },{
+      "pagePath": "pages/theme/theme",
+      "text": "专题",
+      "iconPath": "assets/images/theme.png",
+      "selectedIconPath": "assets/images/theme_selected.png"
+    },{
+      "pagePath": "pages/about/about",
+      "text": "我的",
+      "iconPath": "assets/images/about.png",
+      "selectedIconPath": "assets/images/about_selected.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}
