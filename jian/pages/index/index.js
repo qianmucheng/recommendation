@@ -21,8 +21,8 @@ Page({
           lineWidth: this.data.lineWidth,
           windowWidth: this.data.windowWidth
           })
-        this.tabsCount = tabs.length;
       } catch (e) {
+        new Error(e)
       }
   },
   handlerTabTap(e) {

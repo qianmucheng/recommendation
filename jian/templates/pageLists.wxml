@@ -1,0 +1,31 @@
+<template name="page_0">
+  <scroll-view style="height:100%;" scroll-y>
+    <block wx:for="{{mockData}}" wx:key="unique">
+      <view class="item-list" style="width: {{windowWidth}}px;">
+        <view class="img-wrapper">
+          <image src="{{item.imageurl}}.jpg"></image>
+        </view>
+        <view class="text-wrapper">
+          <view class="item-title">
+            <text>{{item.title}}</text>
+          </view>
+          <view class="item-desc" style="width: {{windowWidth - 70}}px;">
+            <text>{{item.desc}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</template>
+
+<template name="page_1">
+  <scroll-view style="height:100%;" scroll-y>
+    <text>第2页</text>
+  </scroll-view>
+</template>
+
+<template name="page_2">
+  <scroll-view style="height:100%;" scroll-y>
+    <text>第3页</text>
+  </scroll-view>
+</template>
